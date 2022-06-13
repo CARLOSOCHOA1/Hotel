@@ -21,7 +21,9 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#top">
-                <img src="img/log.png" alt="" width="114" height="38" class="d-inline-block align-text-top">
+                <!--<img src="img/log.png" alt="" width="114" height="38" class="d-inline-block align-text-top">-->
+                <img src="img/hotelicon.png" alt="" width="114" height="70" class="d-inline-block align-text-top">
+                <br>ReHotel
             </a>
             
             @if(Auth::user())
@@ -85,23 +87,25 @@
     </nav>
     <!-- End_Nav -->
 
-   <br>
+    <br>
      <br>
       <br>
        <br>
-    <!-- Button_login -->
-        <section id="top" class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start text-md-center" >
+    
+    <!-- Section -->
+    <section class="section1">
+        <img src="img/hotel_fondo.jpeg" class="mw-100" alt="...">
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <h1 class="display-1"><strong><mark>It's time to join!!!</mark></strong></h1><br>
             <div class="container">
-                <div class="d-sm-flex align-items-center justify-content-between">
-                    <div class="text-start">
-                        <a class="btn btn-secondary btn-lg" href="{{ route('login') }}">Join Now</a>
-                    </div>
+                <div class="row align-items-start">
+                    <div class="col">
             </div>
-        </section>
-    <!-- End_Button_login -->
-
-
-
+            <a class="btn btn-secondary btn-lg" href="{{ route('login') }}">Join Now</a>
+        </div>
+        <br>
+    </section>
+    <!-- End_Section -->
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
